@@ -1,0 +1,188 @@
+.Loginpagecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.loginpagebackgroundimagecontainer{
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.loginpagebackgroundimage{
+    width: 50%;
+    height:50%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+}
+.loginformcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.loginformlogo{
+    width: 129px;
+    height: 100px;
+    margin-left: -30px;
+}
+.loginform{
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    align-items: center;
+}
+.loginformcontainerinput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.usernamelable{
+    font-size: 14px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    color: #333333;
+    font-weight:400 ;
+    position: relative;
+}
+.passwordlable{
+    font-size: 14px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    color: #333333;
+    font-weight:400 ;
+    position: relative;
+}
+
+.username-input-wrapper,
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 39%;
+    transform: translateY(10px); /* Adjust for label height */
+    color: #888;
+    pointer-events: none;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.usernameinput,
+.passwordinput {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #64748B;
+    padding: 8px 8px 8px 38px; /* More left padding for icon */
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.usernameinput:focus,
+.passwordinput:focus {
+    outline: none;
+    border: 2px solid #64748B;
+}
+
+
+
+
+
+
+.showpasswordcontainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+.logincheckbox{
+    margin-right: 10px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}
+.loginshowpasswordtext{
+    font-size: 16px;
+    color: #333333;
+}
+.loginbtn{
+    width: 100%;
+    height: 40px;
+    background-color:#B3B3B3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    background-color: #64748B;
+}
+.loginerror{
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+.loginerror::before{
+    content: "⚠️";
+    margin-right: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .loginpagebackgroundimage{
+        width: 100%;
+        height: 50%;
+    }
+    .loginformcontainer{
+        width: 65%;
+        height: 60%;
+    }
+    .loginformlogo{
+        width: 100px;
+        height: 80px;
+        margin-left: -20px;
+    }
+
+}
