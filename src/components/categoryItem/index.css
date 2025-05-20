@@ -1,0 +1,56 @@
+.categoryitemcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    height: 88px; 
+    min-width: 60px; 
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    
+}
+
+
+.iconContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 54px;   
+    width: 54px;     
+    background-color:#F7F7F7;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    color: #19191966;
+    font-size: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.categoryitemname{
+    font-size: 8px; 
+    font-weight: bold;
+    color: #19191999;
+    text-align: center;
+    position: absolute;
+    top: 54px; /* Adjusted for new icon size */
+    width: 100%;
+    transition: color 0.3s ease;
+}
+.categoryitemcontainer:hover .categoryitemname{
+    color: #088C03;
+}
+.categoryitemcontainer:hover .iconContainer{
+    background-color: #088C03;
+    color: white;
+}
+.activeitemcontainer .iconContainer{
+    background-color: #088C03;
+    color: white;
+}
+.activeitemcontainer .categoryitemname{
+    color: #088C03;
+}

@@ -1,0 +1,640 @@
+{
+  "title": "E-Commerce",
+  "categories": [
+    {
+      "name": "Fruits & Vegetables",
+      "products": [
+        {
+          "id": 1,
+          "name": "Orange",
+          "weight": "1kg",
+          "price": "₹100",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_1.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Apple",
+          "weight": "1kg",
+          "price": "₹200",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_2.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Pomegranate",
+          "weight": "1kg",
+          "price": "₹150",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_3.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Guava",
+          "weight": "1kg",
+          "price": "₹145",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_4.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Mango",
+          "weight": "1kg",
+          "price": "₹135",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_5.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Watermelon",
+          "weight": "1pc",
+          "price": "₹50",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_6.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Carrot",
+          "weight": "1kg",
+          "price": "₹100",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_7.jpg"
+        },
+        {
+          "id": 8,
+          "name": "Tomato",
+          "weight": "1kg",
+          "price": "₹35",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_8.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Grapes",
+          "weight": "1kg",
+          "price": "₹75",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_9.jpg"
+        },
+        {
+          "id": 10,
+          "name": "Banana",
+          "weight": "1 Dozen",
+          "price": "₹30",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_10.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Cold Drinks & Juices",
+      "products": [
+        {
+          "id": 11,
+          "name": "Coca Cola",
+          "weight": "500ml",
+          "price": "₹50",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_11.jpg"
+        },
+        {
+          "id": 12,
+          "name": "Pepsi",
+          "weight": "500ml",
+          "price": "₹50",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_12.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Mango Juice",
+          "weight": "150ml",
+          "price": "₹40",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_13.jpg"
+        },
+        {
+          "id": 14,
+          "name": "Orange Juice",
+          "weight": "150ml",
+          "price": "₹40",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_14.jpg"
+        },
+        {
+          "id": 15,
+          "name": "Lemon Juice",
+          "weight": "150ml",
+          "price": "₹40",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_15.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Thumbs Up",
+          "weight": "500ml",
+          "price": "₹50",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_16.jpg"
+        },
+        {
+          "id": 17,
+          "name": "PineApple Juice",
+          "weight": "150ml",
+          "price": "₹40",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_17.jpg"
+        },
+        {
+          "id": 18,
+          "name": "Fanta",
+          "weight": "300ml",
+          "price": "₹50",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_18.jpg"
+        },
+        {
+          "id": 19,
+          "name": "Sprite",
+          "weight": "355ml",
+          "price": "₹50",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_19.jpg"
+        },
+        {
+          "id": 20,
+          "name": "Masala Soda",
+          "weight": "150ml",
+          "price": "₹50",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_20.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "products": [
+        {
+          "id": 21,
+          "name": "Real Fruit Power Juice - Cranberry",
+          "weight": "1L",
+          "price": "₹45.69",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_21.jpg"
+        },
+        {
+          "id": 22,
+          "name": "Red Label Tea, 2x1 kg Multipack",
+          "weight": "2kg",
+          "price": "₹920",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_22.jpg"
+        },
+        {
+          "id": 23,
+          "name": "Horlicks Health & Nutrition Drink - Classic Malt, 1 Kg Jar",
+          "weight": "1kg",
+          "price": "₹500.8",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_23.jpg"
+        },
+        {
+          "id": 24,
+          "name": "Tata Soulfull Nutri Drink+ For Kids - With Millets, Chocolate Brownie Flavour, 200 g Box",
+          "weight": "200g",
+          "price": "₹135",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_24.jpg"
+        },
+        {
+          "id": 25,
+          "name": "Bisleri Mineral Water, 2 L Pack of 9",
+          "weight": "18L",
+          "price": "₹253.8",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_25.jpg"
+        },
+        {
+          "id": 26,
+          "name": "BRU Instant Coffee, 2x200 g Multipack",
+          "weight": "400g",
+          "price": "₹770",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_26.jpg"
+        },
+        {
+          "id": 27,
+          "name": "Cadbury Bournvita Chocolate Nutrition Drink, 2x750 g Multipack",
+          "weight": "1500g",
+          "price": "₹507.63",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_27.jpg"
+        },
+        {
+          "id": 28,
+          "name": "Tata Tea Gold Tea, 1.5 Kg",
+          "weight": "1.5 Kg",
+          "price": "₹651",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_28.jpg"
+        },
+        {
+          "id": 29,
+          "name": "Boost Nutrition Drink - Health, Energy & Sports, 2x750 g Multipack",
+          "weight": "1500g",
+          "price": "₹718",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_29.jpg"
+        },
+        {
+          "id": 30,
+          "name": "Continental Xtra Coffee, 200 g Jar",
+          "weight": "200g",
+          "price": "₹369.07",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_30.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Foodgrains, Oil & Masala",
+      "products": [
+        {
+          "id": 31,
+          "name": "AHAAR Malka Red Dal, 500 g",
+          "weight": "500g",
+          "price": "₹86",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_31.jpg"
+        },
+        {
+          "id": 32,
+          "name": "Aashirvaad Atta/Godihittu - Whole Wheat, 10 kg",
+          "weight": "10kg",
+          "price": "₹428.47",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_32.jpg"
+        },
+        {
+          "id": 33,
+          "name": "AHAAR White Vatana/Matar, 500 g",
+          "weight": "500g",
+          "price": "₹86",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_33.jpg"
+        },
+        {
+          "id": 34,
+          "name": "Fortune Sunlite Sunflower Refined Oil, 3x910 g Multipack",
+          "weight": "2730g",
+          "price": "₹351",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_34.jpg"
+        },
+        {
+          "id": 35,
+          "name": "GRB Ghee, 2 x 500 ml Multipack",
+          "weight": "1L",
+          "price": "₹765.8",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_35.jpg"
+        },
+        {
+          "id": 36,
+          "name": "BB Popular Cashew/Godambi - Whole, 500 g",
+          "weight": "500g",
+          "price": "₹404",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_36.jpg"
+        },
+        {
+          "id": 37,
+          "name": "Madhur Sugar - Pure & Hygienic, Fine Grain, Natural, Sulphur Free, 1 kg",
+          "weight": "1kg",
+          "price": "₹52.04",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_37.jpg"
+        },
+        {
+          "id": 38,
+          "name": "Tata Salt Vacuum Evaporated Iodised Salt - Helps Mental Development, 1 kg Pouch",
+          "weight": "1kg",
+          "price": "₹24",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_38.jpg"
+        },
+        {
+          "id": 39,
+          "name": "Tata Sampann Moong Dal/Hesaru Bele, 1 kg Pouch",
+          "weight": "1kg",
+          "price": "₹174",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_39.jpg"
+        },
+        {
+          "id": 40,
+          "name": "BB Royal Bullet Raw Rice, 25 Kg",
+          "weight": "25kg",
+          "price": "₹2022",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_40.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Bakery, Cakes & Dairy",
+      "products": [
+        {
+          "id": 41,
+          "name": "Hello Tempayy Soyabean Tempeh Cubes - Rich In Protein & Fibre, Low Carb Snack, 200 g Pouch",
+          "weight": "200g",
+          "price": "₹141.55",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_41.jpg"
+        },
+        {
+          "id": 42,
+          "name": "Nandini GoodLife UHT Treated Toned Milk, 1 L Carton",
+          "weight": "1L",
+          "price": "₹62.98",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_42.jpg"
+        },
+        {
+          "id": 43,
+          "name": "Fresho Premium Butter - Pasteurised, 500 g Monocarton",
+          "weight": "500g",
+          "price": "₹275",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_43.jpg"
+        },
+        {
+          "id": 44,
+          "name": "Amul Butter - Pasteurized, 2x500 g Multipack",
+          "weight": "1kg",
+          "price": "₹505.88",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_44.jpg"
+        },
+        {
+          "id": 45,
+          "name": "Amul Taaza Homogenised Toned Milk, 6x1 L Multipack",
+          "weight": "6L",
+          "price": "₹420",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_45.jpg"
+        },
+        {
+          "id": 46,
+          "name": "iD Fresho Soft & Creamy Paneer, 200 g",
+          "weight": "200g",
+          "price": "₹128.7",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_46.jpg"
+        },
+        {
+          "id": 47,
+          "name": "Hello Tempayy Spicy Peri Peri Soyabean Tempeh Cubes - Rich In Protein, Makes Rolls & Salad, 200 g Pouch",
+          "weight": "200g",
+          "price": "₹157.17",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_47.jpg"
+        },
+        {
+          "id": 48,
+          "name": "Amul Cheese Slices - Rich In Protein, Wholesome, No Added Sugar, 750 g (50 Slices)",
+          "weight": "750g",
+          "price": "₹400",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_48.jpg"
+        },
+        {
+          "id": 49,
+          "name": "Amul Masti Buttermilk - Spice, 2x1 L Multipack",
+          "weight": "2L",
+          "price": "₹140",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_49.jpg"
+        },
+        {
+          "id": 50,
+          "name": "Nestle Everyday Dairy Whitener - Milk Powder for Tea, 6x1 kg Multipack",
+          "weight": "6kg",
+          "price": "₹3630",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_50.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Snacks & Branded Foods",
+      "products": [
+        {
+          "id": 51,
+          "name": "Tata GoFit Himalayan Apple Cider Vinegar - With Mother, 500 ml",
+          "weight": "500ml",
+          "price": "₹199",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_51.jpg"
+        },
+        {
+          "id": 52,
+          "name": "MAGGI 2-Min Masala Instant Noodles, 560 g Pouch",
+          "weight": "560g",
+          "price": "₹95.8",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_52.jpg"
+        },
+        {
+          "id": 53,
+          "name": "Britannia Marie Gold Biscuit - Crunchy, Light, Zero Trans Fat, Ready To Eat, 950 g",
+          "weight": "950g",
+          "price": "₹119",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_53.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Eggs, Meat & Fish",
+      "products": [
+        {
+          "id": 54,
+          "name": "Fresho Farm Eggs - Table Tray, Medium, Antibiotic Residue-Free, 3 x 12 pcs Multipack",
+          "weight": "36pcs",
+          "price": "₹381",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_54.jpg"
+        },
+        {
+          "id": 55,
+          "name": "Fresho Chicken - Curry Cut Without Skin, Antibiotic Residue Free, 12-16 Pcs, 500 g",
+          "weight": "500g",
+          "price": "₹128",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_55.jpg"
+        },
+        {
+          "id": 56,
+          "name": "Fresho Rohu Fish Curry Cut/Bengali Cut, 1 kg Without Head",
+          "weight": "1kg",
+          "price": "₹289",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_56.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Gourmet & World Food",
+      "products": [
+        {
+          "id": 57,
+          "name": "Cocosutra Cereal - Granola, Millet Mocha Crunch, Breakfast Cereal With Oats, Nuts, Seeds & Dry Fruits, 300 g",
+          "weight": "300g",
+          "price": "₹300",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_57.jpg"
+        },
+        {
+          "id": 58,
+          "name": "Cocosutra Cereal - Granola, Peanut Butter Chocolate Chunk, Breakfast Cereal With Oats, Nuts, Seeds & Dry Fruits, 300 g",
+          "weight": "300 g",
+          "price": "₹350",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_58.jpg"
+        },
+        {
+          "id": 59,
+          "name": "Kelloggs Muesli Fruit Nut & Seeds - 12-In-1 Power Breakfast, India's No.1 Muesli, 750 g",
+          "weight": "750g",
+          "price": "₹357",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_59.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Baby Care",
+      "products": [
+        {
+          "id": 60,
+          "name": "Pampers Pampers  Premium Care Diaper Pants - S, 4-8 kg, Lotion with Al, 36 pcs",
+          "weight": "36pcs",
+          "price": "₹899",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_60.jpg"
+        },
+        {
+          "id": 61,
+          "name": "Pampers Diaper Pants - Extra Large, 56 pcs",
+          "weight": "56pcs",
+          "price": "₹979.3",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_61.jpg"
+        },
+        {
+          "id": 62,
+          "name": "Himalaya Gentle Baby Shampoo - Mild, No Tears, Paraben Free, 400 ml",
+          "weight": "400ml",
+          "price": "₹280",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_62.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Cleaning & Household",
+      "products": [
+        {
+          "id": 63,
+          "name": "Lizol Disinfectant Surface & Floor Cleaner Liquid - Citrus, 1L",
+          "weight": "1L",
+          "price": "₹200.2",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_63.jpg"
+        },
+        {
+          "id": 64,
+          "name": "Vim Dishwash Bar - Lemon, 3 x 125 g Multipack",
+          "weight": "375g",
+          "price": "₹27",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_64.jpg"
+        },
+        {
+          "id": 65,
+          "name": "Colin Glass & Surface Cleaner Liquid Spray, Regular, 500 ml each (Pack of 3)",
+          "weight": "1500ml",
+          "price": "₹314.05",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_65.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Beauty & Hygiene",
+      "products": [
+        {
+          "id": 66,
+          "name": "Iodex Rapid Action Spray - Inflammation Relief, 5 Active Ingredients, 60 g",
+          "weight": "60g",
+          "price": "₹164",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_66.jpg"
+        },
+        {
+          "id": 67,
+          "name": "Mysore Sandal Superior Sandalwood Oil Soap, 150 g Pack of 3",
+          "weight": "150g",
+          "price": "₹243",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_67.jpg"
+        },
+        {
+          "id": 68,
+          "name": "Sensodyne Toothpaste - Repair & Protect, For Deep Repair Of Sensitive Teeth, 100 g",
+          "weight": "100g",
+          "price": "₹208.25",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_68.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Kitchen, Garden & Pets",
+      "products": [
+        {
+          "id": 69,
+          "name": "Pedigree Adult Dry Dog Food - Chicken & Vegetables, 5.5 kg",
+          "weight": "5.5kg",
+          "price": "₹1223.2",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_69.jpg"
+        },
+        {
+          "id": 70,
+          "name": "Duracell Ultra Alkaline AA Batteries, 4 pcs",
+          "weight": "4pcs",
+          "price": "₹169",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_70.jpg"
+        },
+        {
+          "id": 71,
+          "name": "Whiskas Wet Cat Food - Adult, +1 Year, Chicken In Gravy, Balanced Nutrition, Shiny Coat, 85 g (Pack of 12)",
+          "weight": "85g",
+          "price": "₹540",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_71.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Chocolates & Candies",
+      "products": [
+        {
+          "id": 72,
+          "name": "Nestle KitKat Share & Snap 2x3 Fingers Wafer Bar, 57 g",
+          "weight": "57g",
+          "price": "₹30",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_72.jpg"
+        },
+        {
+          "id": 73,
+          "name": "Cadbury Dairy Milk Chocolate Bar, 134 g Family Pack",
+          "weight": "134g",
+          "price": "₹98.28",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_73.jpg"
+        },
+        {
+          "id": 74,
+          "name": "Ferrero Rocher Chocolate, 16x24 pcs Multipack",
+          "weight": "384 pcs",
+          "price": "₹13674.88",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_74.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Dry Fruits",
+      "products": [
+        {
+          "id": 75,
+          "name": "Tata Sampann 100% Pure Premium Walnuts, 200 g",
+          "weight": "200g",
+          "price": "₹350.62",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_75.jpg"
+        },
+        {
+          "id": 76,
+          "name": "BB Royal Organic - Almond/Badam, 500 g",
+          "weight": "500g",
+          "price": "₹508",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_76.jpg"
+        },
+        {
+          "id": 77,
+          "name": "BB Popular Walnut/Akhrot - Kernels, 200 g Pouch",
+          "weight": "200g",
+          "price": "₹217",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_77.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Indian Mithai",
+      "products": [
+        {
+          "id": 78,
+          "name": "Eat Better Co Better Laddoos - Orange & Ginger, No Added Sugar, Vegan & Gluten Free, 70 g",
+          "weight": "70g",
+          "price": "₹139",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_78.jpg"
+        },
+        {
+          "id": 79,
+          "name": "Paper Boat Chikki, Peanut Bar, 16 g (Pack of 50)",
+          "weight": "800g",
+          "price": "₹240",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_79.jpg"
+        },
+        {
+          "id": 80,
+          "name": "Haldiram's Gulab Jamun, 3 x 1 kg Multipack",
+          "weight": "3kg",
+          "price": "₹555",
+          "image": "https://new-assets.ccbp.in/frontend/react-js/nxt-mart-app/image_80.jpg"
+        }
+      ]
+    }
+  ]
+}
