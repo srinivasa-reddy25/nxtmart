@@ -75,6 +75,8 @@ function App() {
       item.quantity = 0
     }
     )
+    setiscartempty(true);
+    setCart([])
   };
 
 
