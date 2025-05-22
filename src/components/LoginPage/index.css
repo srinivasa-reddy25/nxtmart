@@ -39,8 +39,8 @@
     background-color: white;
     
     /* width: 500px; */
-    width: 60%;
-    max-width: 500px;
+    width: 80%;
+    max-width: 450px;
     height: 500px;
     padding: 20px;
     border-radius: 15px;
@@ -179,10 +179,6 @@
         width: 100%;
         height: 50%;
     }
-    /* .loginformcontainer{
-        width: 65%;
-        height: 60%;
-    } */
     .loginformlogo{
         width: 100px;
         height: 80px;
