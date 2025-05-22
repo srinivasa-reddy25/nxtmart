@@ -1,20 +1,146 @@
 import './App.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useEffect, useState } from 'react';
+
+import BuildContext from './context'
 
 import LoginPage from './components/LoginPage/loginpage'
-import HomePage from './components/Homepage/homePage'
+import NotFound from './components/NotFound/NotFound'
+import CartSuccessfulPage from './components/CartSuccessfulPage/CartSuccessfulPage'
+
+import Mobilehomepage from './components/Mobilehomepage/mobilehomepage'
+import Mobilecart from './components/Mobilecart/Mobilecart'
+
+import Desktophomepage from './components/Desktophomepage/desktophomepage'
+import Desktopcart from './components/Desktopcart/Desktopcart'
+
+import MobileLayout from './components/MobileLayout/MobileLayout';
+import DesktopLayout from './components/DesktopLayout/DesktopLayout'
+
+import { useMediaQuery } from 'react-responsive';
+
 
 function App() {
 
+  const [activeCategory, setActiveCategory] = useState("All")
+  const [activeNavbar, setActiveNavbar] = useState("home")
+  const [iscartempty, setiscartempty] = useState(true)
+  const [cart, setCart] = useState([]);
+
+
+  const [categoriesdata, setcategoriesdata] = useState([]);
+
+
+  const AddItemTocart = (product) => {
+    setiscartempty(false);
+    if (product.quantity > 0) {
+      cart.map((item) => {
+        if (item.id === product.id) {
+          item.quantity += 1
+        }
+      })
+      setCart([...cart])
+    }
+    else {
+      product.quantity += 1
+      setCart([...cart, product]);
+    }
+  }
+
+
+  const removeFromCart = (product) => {
+    if(cart.reduce((total,product)=> total + product.quantity,0) === 1){
+      setiscartempty(true);
+    }
+
+    if (product.quantity === 1) {
+      product.quantity -= 1
+      setCart(cart.filter(item => item.id !== product.id));
+    }
+    else if (product.quantity >0 ) {
+      cart.map((item) => {
+        if (item.id === product.id) {
+          item.quantity -= 1
+        }
+      })
+      setCart([...cart])
+    }
+    else {
+      setCart(cart.filter(item => item.id !== product.id));
+    }
+  };
+  const clearCart = () => {
+    cart.map((item) => {
+      item.quantity = 0
+    }
+    )
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const wrap = (Page, Layout, data) => (
+    <Layout categoriesdata={data}>
+      <Page categoriesdata={data} />
+    </Layout>
+  );
+
+
+  useEffect(() => {
+    const url = "https://apis2.ccbp.in/nxt-mart/category-list-details"
+    const fetchingData = async () => {
+      try {
+        const response = await fetch(url)
+        const jsondata = await response.json()
+        const categoriesdata = await jsondata.categories
+        const updatedData = categoriesdata.map((eachitem) => {
+          return {
+            ...eachitem,
+            products: eachitem.products.map((eachitem) => {
+              return {
+                ...eachitem,
+                quantity: 0,
+              }
+            })
+          }
+        }
+        )
+        console.log(updatedData)
+        setcategoriesdata(updatedData)
+      }
+      catch (err) {
+        console.log(err)
+      }
+    }
+    fetchingData()
+  }, [])
+
+
+
+
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/login' element={ <LoginPage />}></Route>
-          <Route path='/' element={ <HomePage/>}></Route>
-        </Routes>
-      </BrowserRouter>
+      <BuildContext.Provider value={{ activeCategory, setActiveCategory, activeNavbar, setActiveNavbar, cart, setCart, iscartempty, setiscartempty,AddItemTocart ,removeFromCart,clearCart}}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/login' element={<LoginPage />}></Route>
+            <Route path='/' element={isMobile ? wrap(Mobilehomepage, MobileLayout, categoriesdata) : wrap(Desktophomepage, DesktopLayout, categoriesdata)}></Route>
+            <Route path='/cart' element={isMobile ? wrap(Mobilecart, MobileLayout, categoriesdata) : wrap(Desktopcart, DesktopLayout, categoriesdata)}></Route>
+            <Route path="/payment" element={isMobile ? wrap(CartSuccessfulPage, MobileLayout, categoriesdata) : wrap(CartSuccessfulPage, DesktopLayout, categoriesdata)}></Route>
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </BuildContext.Provider>
     </>
   )
 }

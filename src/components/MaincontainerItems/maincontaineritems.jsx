@@ -4,8 +4,11 @@ import Itemscard from '../ItemsCard/itemscard'
 import { IoIosArrowForward } from "react-icons/io";
 
 function Maincontaineritems({ categorydata }) {
+
+    const categoryId = categorydata.name.toLowerCase().replace(/\s+/g, '-');
+    
     return (
-        <div className='maincontainercatogoryConatiner'>
+        <div className='maincontainercatogoryConatiner' id={categoryId}>
             <div className='productcontainerHeader'>
                 <p className='prodcutcontainerheading'>{categorydata.name} <IoIosArrowForward className='productcardarrow'/></p>
                 <a href="#" className='categorycontainerviewbtn'> View all</a>
@@ -15,7 +18,6 @@ function Maincontaineritems({ categorydata }) {
                     return <Itemscard eachproductdata={eachProduct} key={index} />
                 })}
             </div>
-
         </div>
     )
 }

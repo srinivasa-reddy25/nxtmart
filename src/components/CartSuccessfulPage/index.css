@@ -1,0 +1,50 @@
+.cartsuccessfulpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.cartsuccessfulpagecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    gap: 20px;
+}
+.iconContainersuccess{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    border:1px  #16d365 solid;
+    color: #16d365;
+    font-size: 25px;
+}
+.successfultext{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 20px;
+    margin: 0;
+}
+p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+.returntohomebutton{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #16d365;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

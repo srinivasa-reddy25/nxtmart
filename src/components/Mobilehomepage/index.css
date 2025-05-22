@@ -39,49 +39,6 @@
 
 }
 
-.navbarContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 8%;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 20px 20px 0px 0px;
-    border-top: 1px solid #615e5e;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-.homeLink,.cartLink,.logoutlink{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    width: 10%;
-    font-size: 23px;
-    /* background-color: #ffffff; */
-    text-decoration: none;
-    color:#808080;
-}
-
-.linkactive{
-    color:#088C03;
-    /* background-color: #ffffff; */
-    font-weight: 600;
-}
-.homeLink:hover,.cartLink:hover,.logoutlink:hover{
-    color:#088C03;
-    /* background-color: #ffffff; */
-    font-weight: 600;
-}
-
-
-
-
 
 
 

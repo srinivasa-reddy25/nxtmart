@@ -81,3 +81,31 @@
     background-color: #088C03;
     color: white;
 }
+
+.addandremovebuttononmainpage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    height: 35px;
+    width: 65px;
+    border: 1px solid #088C03;
+    border-radius: 8px;
+}
+.removebuttonmainpage{
+    font-size: 20px;
+    color: #088C03;
+    cursor: pointer;
+}
+.addbuttonmainpage{
+    font-size: 15px;
+    color: #088C03;
+    cursor: pointer;
+
+}
+.quantitymainpage{
+    font-size: 15px;
+    color: #088C03;
+    font-weight: 500;
+}

@@ -1,0 +1,44 @@
+.desktopcategoriesproductcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    /* background-color: aquamarine; */
+    /* background-color: #ffffff; */
+    width: 100%;
+    min-height: 320px;
+    max-height: 320px;
+
+}
+.desktopProdcutcontainerheading{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #191919;
+    margin-left: 10px;
+}
+.productscategoryheading{
+    font-size: 15px;
+    font-weight: 500;
+}
+.desktopproductcardarrow{
+    width: 15px;
+    height: 15px;
+}
+
+.desktopProductscontainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+    background-color: #ffffff;
+    scrollbar-width: thin;
+    scrollbar-color: #35cb13 #ffffff;
+    gap: 20px;
+    height: 80%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}

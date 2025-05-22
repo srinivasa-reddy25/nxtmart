@@ -1,0 +1,63 @@
+.desktophomepageNavbarcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: #D8D8D833;
+}
+.logocontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    /* padding-left: 10%; */
+}
+.logocontainer .logoimage{
+    width: 72px;
+    height: 50px;
+    cursor: pointer;
+}
+.desktophomepageNavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+    padding-right: 10%;
+}
+
+.HomeNav,.cartnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    text-decoration: none;
+}
+.homelink,.cartlink{
+    text-decoration: none;
+    color:#333333;
+}
+.homelink:hover,.cartlink:hover{
+    color: #35cb13;
+}
+
+
+.LogoutNavcontainer{
+    display: flex;
+    min-width: 90px;
+    align-self: center;
+}
+.desktoplogoutlink{
+    text-decoration: none;
+    color: #333333;
+}   
+.desktoplogoutlink:hover{
+    color: #35cb13;
+}
