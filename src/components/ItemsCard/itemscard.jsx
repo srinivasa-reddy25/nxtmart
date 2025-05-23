@@ -16,15 +16,18 @@ function Itemscard({ eachproductdata }) {
                 <p className='productquatity'>{eachproductdata.weight}</p>
                 <div className='priceandAddbtnContainer'>
                     <p className='productPrice'>{eachproductdata.price}</p>
-                    {
-                        !eachproductdata.quantity > 0 ? <button className='productAddbtn' onClick={() => (AddItemTocart(eachproductdata))}>Add</button>
-                            :
-                            <div className='addandremovebuttononmainpage'>
-                                <a type='button' className='removebuttonmainpage' onClick={() => (removeFromCart(eachproductdata))}>-</a>
-                                <p className='quantitymainpage'>{eachproductdata.quantity}</p>
-                                <a type='button' className='addbuttonmainpage' onClick={() => (AddItemTocart(eachproductdata))}>+</a>
-                            </div>
-                    }
+                    <div className='productaddbtncontainer'>
+                        {
+                            !eachproductdata.quantity > 0 ? <button className='productAddbtn' onClick={() => (AddItemTocart(eachproductdata))}>Add</button>
+                                :
+                                <div className='addandremovebuttononmainpage'>
+                                    <a type='button' className='removebuttonmainpage' onClick={() => (removeFromCart(eachproductdata))}>-</a>
+                                    <p className='quantitymainpage'>{eachproductdata.quantity}</p>
+                                    <a type='button' className='addbuttonmainpage' onClick={() => (AddItemTocart(eachproductdata))}>+</a>
+                                </div>
+                        }
+                    </div>
+
                 </div>
             </div>
 

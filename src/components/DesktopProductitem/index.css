@@ -1,17 +1,18 @@
-.desktopproductcard{
+.desktopproductcard {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 97%;
     padding: 15px;
-    min-width:200px ;
+    min-width: 200px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
 }
-.desktopimnagecontainer{
+
+.desktopimnagecontainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,13 +22,15 @@
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.desktopproductimage{
+
+.desktopproductimage {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 10px;
 }
-.desktopcontentcontainer{
+
+.desktopcontentcontainer {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -35,19 +38,22 @@
     gap: 5px;
     padding: 10px 10px 0 10px;
 }
-.desktopproductname{
+
+.desktopproductname {
     font-size: 14px;
     font-weight: 500;
     color: #333;
     margin: 0;
 }
-.desktopproductquatity{
+
+.desktopproductquatity {
     font-size: 12px;
     color: #666;
     margin: 0;
     margin-top: 2px;
 }
-.desktoppriceandAddbtnContainer{
+
+.desktoppriceandAddbtnContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -55,15 +61,17 @@
     gap: 10px;
     align-self: center;
 }
-.desktopproductPrice{
+
+.desktopproductPrice {
     font-size: 16px;
     font-weight: 600;
     color: #333;
     margin: 0;
 }
-.desktopproductAddbtn{
-    height: 30px;
-    width: 50%;
+
+.desktopproductAddbtn {
+    height: 100%;
+    width: 100%;
     align-self: center;
     background-color: #fff;
     color: #35cb13;
@@ -75,7 +83,18 @@
     border: 1px solid #35cb13;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.desktopproductAddbtn:hover{
+
+.desktopproductAddbtn:hover {
     background-color: #35cb13;
     color: #ffffff;
+}
+
+.desktopproductaddbtncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    align-self: flex-end;
+    margin-bottom: 10px;
 }
