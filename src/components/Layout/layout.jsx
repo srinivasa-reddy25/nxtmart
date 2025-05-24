@@ -1,4 +1,4 @@
-
+import './index.css'
 
 function Layout() {
   return (
@@ -7,5 +7,5 @@ function Layout() {
     </div>
   )
 }
-
+  
 export default Layout

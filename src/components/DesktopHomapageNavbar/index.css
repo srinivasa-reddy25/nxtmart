@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 10%;
+    padding: 20px 0;
     background-color: #D8D8D833;
 }
 .logocontainer{
@@ -14,7 +14,6 @@
     justify-content: center;
     width: 20%;
     height: 100%;
-    /* padding-left: 10%; */
 }
 .logocontainer .logoimage{
     width: 72px;
@@ -47,6 +46,9 @@
 .homelink:hover,.cartlink:hover{
     color: #35cb13;
 }
+.cartnav{
+    position: relative;
+}
 
 
 .LogoutNavcontainer{
@@ -60,4 +62,24 @@
 }   
 .desktoplogoutlink:hover{
     color: #35cb13;
+}
+
+
+.numberofitemscontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: #35cb13;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+}
+.numberofitems{
+    font-size: 14px;
+    color: #ffffff;
 }

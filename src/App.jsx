@@ -27,6 +27,8 @@ function App() {
   const [activeNavbar, setActiveNavbar] = useState("home")
   const [iscartempty, setiscartempty] = useState(true)
   const [cart, setCart] = useState([]);
+  const [isloading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
 
 
   const [categoriesdata, setcategoriesdata] = useState([]);
@@ -82,14 +84,6 @@ function App() {
 
 
 
-
-
-
-
-
-
-
-
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const wrap = (Page, Layout, data) => (
     <Layout categoriesdata={data}>
@@ -100,6 +94,7 @@ function App() {
 
   useEffect(() => {
     const url = "https://apis2.ccbp.in/nxt-mart/category-list-details"
+    setIsLoading(true)
     const fetchingData = async () => {
       try {
         const response = await fetch(url)
@@ -117,11 +112,14 @@ function App() {
           }
         }
         )
-        console.log(updatedData)
+        // console.log(updatedData)
         setcategoriesdata(updatedData)
+        setIsLoading(false)
+        setIsError(false)
       }
       catch (err) {
         console.log(err)
+        setIsError(true)
       }
     }
     fetchingData()
@@ -132,7 +130,7 @@ function App() {
 
   return (
     <>
-      <BuildContext.Provider value={{ activeCategory, setActiveCategory, activeNavbar, setActiveNavbar, cart, setCart, iscartempty, setiscartempty,AddItemTocart ,removeFromCart,clearCart}}>
+      <BuildContext.Provider value={{ activeCategory, setActiveCategory, activeNavbar, setActiveNavbar, cart, setCart, iscartempty, setiscartempty,AddItemTocart ,removeFromCart,clearCart, isloading, setIsLoading, isError, setIsError }}>
         <BrowserRouter>
           <Routes>
             <Route path='/login' element={<LoginPage />}></Route>

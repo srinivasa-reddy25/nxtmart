@@ -5,8 +5,15 @@ import { Link } from 'react-router-dom'
 
 import { useNavigate, Navigate } from 'react-router-dom'
 import Cookies from 'js-cookie'
+import { useContext } from 'react';
+import BuildContext from '../../context';
 
 function DesktopHomapageNavbar() {
+  const { cart } = useContext(BuildContext)
+  const numberofitems = cart.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue.quantity;
+  }
+    , 0);
 
   const navigate = useNavigate()
   const jwtToken = Cookies.get('jwt_token')
@@ -28,6 +35,12 @@ function DesktopHomapageNavbar() {
           <Link to="/" className='homelink'>Home </Link>
         </li>
         <li className='cartnav'>
+          {numberofitems === 0 ? null
+            : <div className='numberofitemscontainer'>
+                <span className='numberofitems'>{numberofitems}</span>
+              </div>
+          }
+
           <Link to="/cart" className='cartlink'>cart </Link>
         </li>
         <li className='LogoutNavcontainer'>

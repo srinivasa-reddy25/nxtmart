@@ -4,7 +4,7 @@ import { IoCart } from "react-icons/io5";
 import { useContext } from 'react'
 
 const categoryIcons ={ 
-    cart: <IoCart /> 
+    cart: <IoCart />
 }
 
 import  BuildContext  from '../../context'

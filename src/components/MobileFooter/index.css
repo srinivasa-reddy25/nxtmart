@@ -41,3 +41,20 @@
     /* background-color: #ffffff; */
     font-weight: 600;
 }
+.cartLink {
+    position: relative;
+}
+.mobilenumberofitemscontainer{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #088C03;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
