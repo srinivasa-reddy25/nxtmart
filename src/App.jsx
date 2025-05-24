@@ -20,6 +20,11 @@ import DesktopLayout from './components/DesktopLayout/DesktopLayout'
 
 import { useMediaQuery } from 'react-responsive';
 
+// if (!localStorage.getItem('loaclstoredcart')) {
+//   localStorage.setItem('loaclstoredcart', JSON.stringify({}));
+// }
+
+
 
 function App() {
 
@@ -32,6 +37,22 @@ function App() {
 
 
   const [categoriesdata, setcategoriesdata] = useState([]);
+  const localdata = JSON.parse(localStorage.getItem('loaclstoredcart'));
+
+
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const wrap = (Page, Layout, data) => (
+    <Layout categoriesdata={data}>
+      <Page categoriesdata={data} />
+    </Layout>
+  );
+
+
+
+
+
+
+
 
 
   const AddItemTocart = (product) => {
@@ -52,7 +73,7 @@ function App() {
 
 
   const removeFromCart = (product) => {
-    if(cart.reduce((total,product)=> total + product.quantity,0) === 1){
+    if (cart.reduce((total, product) => total + product.quantity, 0) === 1) {
       setiscartempty(true);
     }
 
@@ -60,7 +81,7 @@ function App() {
       product.quantity -= 1
       setCart(cart.filter(item => item.id !== product.id));
     }
-    else if (product.quantity >0 ) {
+    else if (product.quantity > 0) {
       cart.map((item) => {
         if (item.id === product.id) {
           item.quantity -= 1
@@ -84,12 +105,26 @@ function App() {
 
 
 
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const wrap = (Page, Layout, data) => (
-    <Layout categoriesdata={data}>
-      <Page categoriesdata={data} />
-    </Layout>
-  );
+
+
+  useEffect(() => {
+    cart.map((item) => {
+      localdata[item.id] = item.quantity;
+      localStorage.setItem('loaclstoredcart', JSON.stringify(localdata));
+    })
+    console.log("cart updated", cart);
+  }, [cart])
+
+  const returncartitems = (products) => {
+    products.map((product) => {
+      if (product.quantity > 0) {
+        setiscartempty(false);
+        setCart(prev => [...prev, product]);
+        // console.log("visited",product)
+      }
+    })
+  }
+
 
 
   useEffect(() => {
@@ -106,14 +141,17 @@ function App() {
             products: eachitem.products.map((eachitem) => {
               return {
                 ...eachitem,
-                quantity: 0,
+                quantity: localdata[eachitem.id] ? localdata[eachitem.id] : 0,
               }
             })
           }
         }
         )
-        // console.log(updatedData)
+
         setcategoriesdata(updatedData)
+        updatedData.map((category) => {
+          returncartitems(category.products)
+        });
         setIsLoading(false)
         setIsError(false)
       }
@@ -123,14 +161,20 @@ function App() {
       }
     }
     fetchingData()
+
+
+
+
+
+
   }, [])
 
-
+  // console.log("carttt",cart)
 
 
   return (
     <>
-      <BuildContext.Provider value={{ activeCategory, setActiveCategory, activeNavbar, setActiveNavbar, cart, setCart, iscartempty, setiscartempty,AddItemTocart ,removeFromCart,clearCart, isloading, setIsLoading, isError, setIsError }}>
+      <BuildContext.Provider value={{ activeCategory, setActiveCategory, activeNavbar, setActiveNavbar, cart, setCart, iscartempty, setiscartempty, AddItemTocart, removeFromCart, clearCart, isloading, setIsLoading, isError, setIsError }}>
         <BrowserRouter>
           <Routes>
             <Route path='/login' element={<LoginPage />}></Route>
