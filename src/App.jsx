@@ -20,9 +20,14 @@ import DesktopLayout from './components/DesktopLayout/DesktopLayout'
 
 import { useMediaQuery } from 'react-responsive';
 
-// if (!localStorage.getItem('loaclstoredcart')) {
+if (!localStorage.getItem('loaclstoredcart')) {
+  // console.log("localstorage not found")
+  localStorage.setItem('loaclstoredcart', JSON.stringify({}));
+}
+// else {
 //   localStorage.setItem('loaclstoredcart', JSON.stringify({}));
 // }
+
 
 
 
@@ -39,7 +44,7 @@ function App() {
   const [categoriesdata, setcategoriesdata] = useState([]);
   const localdata = JSON.parse(localStorage.getItem('loaclstoredcart'));
 
-
+  // console.log(localStorage.getItem('loaclstoredcart'))
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const wrap = (Page, Layout, data) => (
     <Layout categoriesdata={data}>
@@ -73,13 +78,16 @@ function App() {
 
 
   const removeFromCart = (product) => {
+    console.log("remove")
     if (cart.reduce((total, product) => total + product.quantity, 0) === 1) {
       setiscartempty(true);
     }
 
     if (product.quantity === 1) {
       product.quantity -= 1
+      // console.log("product quantity", product.quantity)
       setCart(cart.filter(item => item.id !== product.id));
+      // console.log("cart after removing", cart)
     }
     else if (product.quantity > 0) {
       cart.map((item) => {
@@ -108,11 +116,13 @@ function App() {
 
 
   useEffect(() => {
+    console.log("cart updated", cart)
+    const tempcartdata={}
+    
     cart.map((item) => {
-      localdata[item.id] = item.quantity;
-      localStorage.setItem('loaclstoredcart', JSON.stringify(localdata));
+      tempcartdata[item.id] = item.quantity;
     })
-    console.log("cart updated", cart);
+    localStorage.setItem('loaclstoredcart', JSON.stringify(tempcartdata));
   }, [cart])
 
   const returncartitems = (products) => {
@@ -120,11 +130,10 @@ function App() {
       if (product.quantity > 0) {
         setiscartempty(false);
         setCart(prev => [...prev, product]);
-        // console.log("visited",product)
       }
     })
   }
-  
+
 
 
   useEffect(() => {
