@@ -184,3 +184,32 @@
     }
 
 }
+
+.loginpagelogincredentialscontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #333333;
+    gap: 10px;
+}
+.loginpagelogincredentialscontainer h1 {
+    margin: 5px 0;
+    align-self: flex-start;
+    font-size: 18px;
+}
+.loginpagelogincredentialscontainer p {
+    text-decoration: none;
+    align-self: flex-start;
+    color: #333333;
+    font-size: 14px;
+}

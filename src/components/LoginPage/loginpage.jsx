@@ -59,6 +59,11 @@ function LoginPage() {
 
     return (
         <div className='Loginpagecontainer'>
+            <div className='loginpagelogincredentialscontainer'>
+                <h1>Login credentials</h1>
+                <p>username : rahul</p>
+                <p>password : rahul@2021</p>
+            </div>
             <div className='loginpagebackgroundimagecontainer'>
                 <img className='loginpagebackgroundimage' src="https://res.cloudinary.com/da98b7kad/image/upload/v1747671536/8faf00be5eb69a93a65afbe3d74139ee52d7c888_hlrh9n.jpg" alt="Background" />
                 <img className='loginpagebackgroundimage' src="https://res.cloudinary.com/da98b7kad/image/upload/v1747671536/17264c25b2390e63bf21e8f09205a575650c9b3f_wgolmy.jpg" alt="Background" />
