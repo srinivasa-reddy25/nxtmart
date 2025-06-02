@@ -5,7 +5,6 @@ import MobileFooter from '../MobileFooter/MobileFooter'
 
 
 function MobileLayout({ children }) {
-    // console.log(children)
     return (
         <div className='Homepagecontainer'>
             <>

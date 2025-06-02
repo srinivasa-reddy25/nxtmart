@@ -47,7 +47,7 @@ function App() {
   // console.log(localStorage.getItem('loaclstoredcart'))
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const wrap = (Page, Layout, data) => (
-    <Layout categoriesdata={data}>
+    <Layout>
       <Page categoriesdata={data} />
     </Layout>
   );
@@ -117,8 +117,8 @@ function App() {
 
   useEffect(() => {
     console.log("cart updated", cart)
-    const tempcartdata={}
-    
+    const tempcartdata = {}
+
     cart.map((item) => {
       tempcartdata[item.id] = item.quantity;
     })
@@ -178,7 +178,6 @@ function App() {
 
   }, [])
 
-  // console.log("carttt",cart)
 
 
   return (

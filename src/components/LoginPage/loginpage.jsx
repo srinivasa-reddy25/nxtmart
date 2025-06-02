@@ -99,8 +99,8 @@ function LoginPage() {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
-                    <div className='showpasswordcontainer' >
-                        <input type="checkbox" className='logincheckbox' onChange={() => (setShowPassword((prev) => (!prev)))} />
+                    <div className='showpasswordcontainer' onClick={() => (setShowPassword((prev) => (!prev)))}>
+                        <input type="checkbox" className='logincheckbox' checked={showPassword} />
                         <p className='loginshowpasswordtext'>Show Password</p>
                     </div>
                     <button type="submit" className='loginbtn'>Login</button>
